@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>game-memory</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/game.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" id="memory-game">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="info-part">
+					<div class="logo">
+						<img src="image/logo.jpg" alt="logo">
+					</div>
+					<div class="player-info">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">MemoryerID</h3>
+							</div>
+							<!-- 后台读取选手姓名 -->
+							<div class="panel-body"><span>666</span></div>
+						</div>
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">MemoryerName</h3>
+							</div>
+							<!-- 后台读取选手姓名 -->
+							<div class="panel-body"><span>崔天昊</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="selector-part">
+					<form action="" class="form-horizontal">
+						<div class="form-group">
+							<label for="#memory-time" class="col-sm-4 control-label">记忆时间</label>
+							<div class="col-sm-8">
+								<select name="memory-time" id="memory-time" class="form-control">
+									<option value="1">1min</option>
+									<option value="3">3min</option>
+									<option value="5">5min</option>
+									<option value="7">7min</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="#memory-number" class="col-sm-4 control-label">记忆数量</label>
+							<div class="col-sm-8">
+								<select name="memory-number" id="memory-number" class="form-control">
+									<option value="50">50</option>
+									<option value="100">100</option>
+									<option value="200">200</option>
+									<option value="400">400</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="timer">
+					<canvas id="canvas"></canvas>
+				</div>
+				<div class="game-part">
+					<div class="game-body">
+						<div class="grid-container"></div>
+					</div>
+					<div class="game-footnav">
+						<nav>
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="button-group">
+			<button class="btn btn-primary">开始记忆</button>
+			<button class="btn btn-primary">开始复盘</button>
+			<button class="btn btn-primary">显示答案</button>
+			<button class="btn btn-primary">重来</button>
+		</div>
+	</div>
+
+	<script src="js/lib/require.js" data-main="js/main.js"></script>
+</body>
+</html>

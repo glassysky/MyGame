@@ -1,0 +1,30 @@
+#memory-game {
+	.row {
+		.col-md-4 {
+			.info-part {
+				.logo {
+					text-align: center;
+				}
+				.player-info {
+					width: 80%;
+					margin: 0 auto;
+				}
+			}
+			.selector-part {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+		.col-md-8 {
+			.game-part {
+				text-align: center;
+			}
+		}
+	}
+	.button-group {
+		text-align: center;
+		button {
+			margin: 5px;
+		}
+	}
+}

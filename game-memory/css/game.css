@@ -1,0 +1,16 @@
+#memory-game .row .col-md-4 .info-part .logo {
+  text-align: center; }
+#memory-game .row .col-md-4 .info-part .player-info {
+  width: 80%;
+  margin: 0 auto; }
+#memory-game .row .col-md-4 .selector-part {
+  width: 80%;
+  margin: 0 auto; }
+#memory-game .row .col-md-8 .game-part {
+  text-align: center; }
+#memory-game .button-group {
+  text-align: center; }
+  #memory-game .button-group button {
+    margin: 5px; }
+
+/*# sourceMappingURL=game.css.map */
