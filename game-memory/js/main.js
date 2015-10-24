@@ -21,4 +21,10 @@ requirejs(['game'],function(game){
 	game.makeTable();
 	randomArray = game.makeNumber();
 	var drawText = game.makeTimer();
+    // 点击开始游戏，计时开始
+	$("#start-memory").on("click",function(){
+		var memoryTime = $("#memory-time").val();
+		drawText = game.makeTimer(memoryTime);
+		drawText();
+	});
 });

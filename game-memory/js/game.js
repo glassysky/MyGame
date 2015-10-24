@@ -29,11 +29,12 @@ define(['jquery','bootstrap'],function($,bootstrap){
 
 			return randomArray;
 		},
-		makeTimer : function(){
+		makeTimer : function(minute,bool){
 			var canvas = document.getElementById("canvas");
 			var ctx = canvas.getContext('2d');
-			var minute = 0,second = 0;
+			var second = 0;
 			var txt = "";
+
 			canvas.height = canvas.width*0.3;
 
 			function addZero(num) {
@@ -45,6 +46,10 @@ define(['jquery','bootstrap'],function($,bootstrap){
 			}
 
 			function drawText(){
+				setTimeout(function(){
+					
+					setTimeout(drawText);
+				},1000);
 				ctx.fillStyle = "red";
 				ctx.strokeStyle = "cornflowerblue";
 				ctx.fillText(txt, canvas.width/2, canvas.height/2);
