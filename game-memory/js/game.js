@@ -30,9 +30,33 @@ define(['jquery','bootstrap'],function($,bootstrap){
 			return randomArray;
 		},
 		makeTimer : function(){
-			var canvas = $("#canvas");
-			canvas.css("height",canvas.width()*0.3 + "px");
-			var ctx = canvas.get(0).getContext('2d');
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext('2d');
+			var minute = 0,second = 0;
+			var txt = "";
+			canvas.height = canvas.width*0.3;
+
+			function addZero(num) {
+				if(num < 10){
+					return "0" + num;
+				} else {
+					return num;
+				}
+			}
+
+			function drawText(){
+				ctx.fillStyle = "red";
+				ctx.strokeStyle = "cornflowerblue";
+				ctx.fillText(txt, canvas.width/2, canvas.height/2);
+				ctx.strokeText(txt, canvas.width/2, canvas.height/2);
+			}
+
+			txt = addZero(minute) + ":" + addZero(second);
+			ctx.font = "400% Helvetica";
+			ctx.textBaseline = "middle";
+			ctx.textAlign = "center";
+
+			return drawText;
 		}
 	};
 });

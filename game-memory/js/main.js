@@ -20,5 +20,5 @@ requirejs(['game'],function(game){
 	var randomArray = [];
 	game.makeTable();
 	randomArray = game.makeNumber();
-	game.makeTimer();
+	var drawText = game.makeTimer();
 });
