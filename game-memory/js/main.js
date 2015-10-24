@@ -4,7 +4,7 @@ requirejs.config({
 	paths: {
 		jquery: 'lib/jquery-1.11.3.min',
 		bootstrap: 'lib/bootstrap.min',
-		maketable: 'maketable'
+		game: 'game'
 	},
 	shim: {
 		'jquery': { exports : 'jquery' },
@@ -12,10 +12,10 @@ requirejs.config({
 			exports : 'bootstrap',
 			deps : ['jquery'] 
 		},
-		'maketable' : { exports : 'maketable' }
+		'game' : { exports : 'game' }
 	}
 });
 
-requirejs(['maketable'],function(maketable){
-	maketable.test();
+requirejs(['game'],function(game){
+	game.maketable();
 });
