@@ -6,11 +6,27 @@
 #memory-game .row .col-md-4 .selector-part {
   width: 80%;
   margin: 0 auto; }
+#memory-game .row .col-md-8 .timer {
+  text-align: center; }
 #memory-game .row .col-md-8 .game-part {
   text-align: center; }
+  #memory-game .row .col-md-8 .game-part .game-body .grid-container {
+    width: 100%; }
+    #memory-game .row .col-md-8 .game-part .game-body .grid-container .grid-cell {
+      display: inline-block;
+      width: 10%;
+      font-size: 200%;
+      float: left;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 2px; }
 #memory-game .button-group {
   text-align: center; }
   #memory-game .button-group button {
     margin: 5px; }
+
+#canvas {
+  width: 40%;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=game.css.map */

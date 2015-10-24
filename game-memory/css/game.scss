@@ -16,8 +16,25 @@
 			}
 		}
 		.col-md-8 {
+			.timer {
+				text-align: center;
+			}
 			.game-part {
 				text-align: center;
+				.game-body {
+					.grid-container {
+						width: 100%;
+						.grid-cell {
+							display: inline-block;
+							width: 10%;
+							font-size: 200%;
+							float: left;
+							border: 1px solid black;
+							border-radius: 10px;
+							padding: 2px;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -27,4 +44,9 @@
 			margin: 5px;
 		}
 	}
+}
+
+#canvas {
+	width: 40%;
+	border: 1px solid black;
 }

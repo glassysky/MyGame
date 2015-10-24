@@ -17,5 +17,8 @@ requirejs.config({
 });
 
 requirejs(['game'],function(game){
-	game.maketable();
+	var randomArray = [];
+	game.makeTable();
+	randomArray = game.makeNumber();
+	game.makeTimer();
 });
